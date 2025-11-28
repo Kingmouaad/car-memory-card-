@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[url('Gemini_Generated_Image_1k1vby1k1vby1k1v.png')] 
+       bg-[100%_100%]
+       bg-center 
+       bg-no-repeat 
+       bg-fixed size-full;
+    /* background-image: url("/Gemini_Generated_Image_1k1vby1k1vby1k1v.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+  }
+}
