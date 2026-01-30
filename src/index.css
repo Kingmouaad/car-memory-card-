@@ -3,13 +3,17 @@
 @layer base {
   body {
     @apply bg-[url('Gemini_Generated_Image_1k1vby1k1vby1k1v.png')] 
-       bg-[100%_100%]
+       
        bg-center 
        bg-no-repeat 
-       bg-fixed size-full;
-    /* background-image: url("/Gemini_Generated_Image_1k1vby1k1vby1k1v.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
+       bg-fixed w-full h-screen;
+  }
+}
+@layer base {
+  button {
+    @apply bg-[#8d6e3f] w-[10%] h-[20%] rounded-[5px]
+     [transition:all_0.3s_ease]  hover:[transform:Scale(1.1)] text-[white] font-bold rounded-[10px] 
+     cursor-pointer hover:bg-[#f7e7c6] hover:text-black 
+     [box-shadow:0_4px_6px_black];
   }
 }
