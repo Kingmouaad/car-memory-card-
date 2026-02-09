@@ -9,7 +9,7 @@ function App() {
         <div className="size-full flex flex-col items-center gap-3 animate-fade-in">
           <div className="animate-logo-bounce">
             <img
-              src="./public/logoo.png"
+              src="/logoo.png"
               alt=""
               className="cursor-pointer"
               onClick={() => setstate("")}

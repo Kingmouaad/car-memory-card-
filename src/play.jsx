@@ -1,11 +1,11 @@
 import { useState } from "react";
 const list = [
   {
-    image: { url: "/public/audirrs7.jpg" },
+    image: { url: "/audirrs7.jpg" },
     name: "Audi rs7",
   },
   {
-    image: { url: "/public/bmwm6.jpg" },
+    image: { url: "/bmwm6.jpg" },
     name: "BMW M6",
   },
   {
@@ -33,7 +33,7 @@ const list = [
     name: "Polo",
   },
   {
-    image: { url: "./public/renaultarkana.jpg" },
+    image: { url: "/renaultarkana.jpg" },
     name: "Renault Arkana",
   },
   {
@@ -173,7 +173,7 @@ export default function Play({ state, onBackHome }) {
     <div className="relative flex flex-col size-full p-4 animate-page-in">
       <div className="flex flex-1 items-start mb-6 w-full justify-between gap-4">
         <img
-          src="./logoo.png"
+          src="/logoo.png"
           alt="home"
           className="h-[200px] md:h-[300px] cursor-pointer animate-logo-pop"
           onClick={onBackHome}
@@ -192,7 +192,7 @@ function Win({ onReplay, onBackHome }){
   return (
     <div className="absolute inset-0 flex items-center justify-center bg-black/60">
       <div className="h-[50%] w-[50%] max-w-[500px] max-h-[500px] rounded flex flex-col justify-center items-center p-[10px] bg-amber-900/90">
-        <img src="./happycar.jpg" alt="win" className="mb-4 max-h-[60%]" />
+        <img src="/happycar.jpg" alt="win" className="mb-4 max-h-[60%]" />
         <div className="flex w-full max-w-xs gap-3 mt-2">
           <button className="w-1/2" onClick={onReplay}>Replay</button>
           <button className="w-1/2" onClick={onBackHome}>Home</button>
@@ -205,7 +205,7 @@ function Lose({ onReplay, onBackHome }){
   return (
     <div className="absolute inset-0 flex items-center justify-center bg-black/60">
       <div className="h-[50%] w-[50%] max-w-[500px] max-h-[500px] rounded flex flex-col justify-center items-center p-[10px] bg-amber-900/90">
-        <img src="./sadface.jpg" alt="lose" className="mb-4 max-h-[60%]" />
+        <img src="/sadface.jpg" alt="lose" className="mb-4 max-h-[60%]" />
         <div className="flex w-full max-w-xs gap-7 mt-2 h-[50%] justify-center items-center">
           <button className="w-1/2" onClick={onReplay}>Replay</button>
           <button className="w-1/2" onClick={onBackHome}>Home</button>
