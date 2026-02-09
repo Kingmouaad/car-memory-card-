@@ -6,9 +6,14 @@ function App() {
   return (
     <>
       {!state && (
-        <div className="size-full flex flex-col items-center gap-3">
-          <div className="">
-            <img src="./public/logoo.png" alt="" />
+        <div className="size-full flex flex-col items-center gap-3 animate-fade-in">
+          <div className="animate-logo-bounce">
+            <img
+              src="./public/logoo.png"
+              alt=""
+              className="cursor-pointer"
+              onClick={() => setstate("")}
+            />
           </div>
           <div className="text-6xl md:text-7xl font-black  tracking-wider text-amber-50 [-webkit-text-stroke:2px_#8B7355] drop-shadow-[5px_5px_0px_rgba(139,115,85,0.7)] [text-shadow:5px_5px_0px_rgba(139,115,85,0.7),10px_10px_20px_rgba(0,0,0,0.3)]">
             Memory Game
@@ -20,7 +25,7 @@ function App() {
           </div>
         </div>
       )}
-      {state && <Play state={state} />}
+      {state && <Play state={state} onBackHome={() => setstate("")} />}
     </>
   );
 }
